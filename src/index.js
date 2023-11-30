@@ -12,3 +12,11 @@ window.addEventListener('load', async () => {
     document.querySelectorAll('.hero__burbuja')[1].classList.add('hero__burbuja--active-2');
 
 })
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Inicializa Smooth Scroll
+    const scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 800, // Velocidad del desplazamiento
+        speedAsDuration: true, // Usa la velocidad como duración de la animación
+    });
+});

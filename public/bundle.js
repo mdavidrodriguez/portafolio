@@ -63,37 +63,43 @@ const datos = [
         id: '1',
         titulo: 'Trabajo #1',
         texto: 'Magna eu culpa sunt anim aliqua nulla veniam eiusmod commodo consectetur dolore dolor. Consequat laborum ad enim aute qui mollit quis occaecat laborum veniam qui. Do incididunt Lorem proident in cillum eu labore est exercitation. Nostrud in ex officia commodo commodo Lorem. Et laboris pariatur.',
-        fecha: '12 de agosto 2023'
+        fecha: '12 de agosto 2023',
+        demoUrl: 'https://ejemplo.com/demo1'
     },
     {
         id: '2',
         titulo: 'Trabajo #2',
         texto: 'Magna eu culpa sunt anim aliqua nulla veniam eiusmod commodo consectetur dolore dolor. Consequat laborum ad enim aute qui mollit quis occaecat laborum veniam qui. Do incididunt Lorem proident in cillum eu labore est exercitation. Nostrud in ex officia commodo commodo Lorem. Et laboris pariatur.',
-        fecha: '30 de agosto 2023'
+        fecha: '30 de agosto 2023',
+        demoUrl: 'https://ejemplo.com/demo1'
     },
     {
         id: '3',
         titulo: 'Trabajo #3',
         texto: 'Magna eu culpa sunt anim aliqua nulla veniam eiusmod commodo consectetur dolore dolor. Consequat laborum ad enim aute qui mollit quis occaecat laborum veniam qui. Do incididunt Lorem proident in cillum eu labore est exercitation. Nostrud in ex officia commodo commodo Lorem. Et laboris pariatur.',
-        fecha: '30 de agosto 2023'
+        fecha: '30 de agosto 2023',
+        demoUrl: 'https://ejemplo.com/demo1'
     },
     {
         id: '4',
         titulo: 'Trabajo #4',
         texto: 'Magna eu culpa sunt anim aliqua nulla veniam eiusmod commodo consectetur dolore dolor. Consequat laborum ad enim aute qui mollit quis occaecat laborum veniam qui. Do incididunt Lorem proident in cillum eu labore est exercitation. Nostrud in ex officia commodo commodo Lorem. Et laboris pariatur.',
-        fecha: '30 de agosto 2023'
+        fecha: '30 de agosto 2023',
+        demoUrl: 'https://ejemplo.com/demo1'
     },
     {
         id: '5',
         titulo: 'Trabajo #5',
         texto: 'Magna eu culpa sunt anim aliqua nulla veniam eiusmod commodo consectetur dolore dolor. Consequat laborum ad enim aute qui mollit quis occaecat laborum veniam qui. Do incididunt Lorem proident in cillum eu labore est exercitation. Nostrud in ex officia commodo commodo Lorem. Et laboris pariatur.',
-        fecha: '30 de agosto 2023'
+        fecha: '30 de agosto 2023',
+        demoUrl: 'https://ejemplo.com/demo1'
     },
     {
         id: '6',
         titulo: 'Trabajo #6',
         texto: 'Magna eu culpa sunt anim aliqua nulla veniam eiusmod commodo consectetur dolore dolor. Consequat laborum ad enim aute qui mollit quis occaecat laborum veniam qui. Do incididunt Lorem proident in cillum eu labore est exercitation. Nostrud in ex officia commodo commodo Lorem. Et laboris pariatur.',
-        fecha: '30 de agosto 2023'
+        fecha: '30 de agosto 2023',
+        demoUrl: 'https://ejemplo.com/demo1'
     },
 ];
 
@@ -110,12 +116,19 @@ trabajos.addEventListener('click', (e) => {
                 return trabajo;
             }
         });
-        const { titulo, fecha, texto } = trabajo[0];
+        const { titulo, fecha, texto, demoUrl } = trabajo[0];
 
         ventanaTrabajos.querySelector('.ventana__titulo').innerText = titulo;
         ventanaTrabajos.querySelector('.ventana__fecha').innerText = fecha;
         ventanaTrabajos.querySelector('.ventana__parrafo').innerText = texto;
         ventanaTrabajos.querySelector('.ventana__imagen').src = trabajoClick.querySelector('img').src;
+        const botonDemo = ventanaTrabajos.querySelector('.ventana__demoUrl');
+        if (demoUrl) {
+            botonDemo.style.display = 'inline-block';
+            botonDemo.addEventListener('click', () => window.open(demoUrl, '_blank'));
+        } else {
+            botonDemo.style.display = 'none';
+        }
 
         ventanaTrabajos.classList.add('ventana--active');
     }
@@ -193,5 +206,13 @@ window.addEventListener('load', async () => {
     document.querySelectorAll('.hero__burbuja')[0].classList.add('hero__burbuja--active-1');
     document.querySelectorAll('.hero__burbuja')[1].classList.add('hero__burbuja--active-2');
 
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Inicializa Smooth Scroll
+    new SmoothScroll('a[href*="#"]', {
+        speed: 800, // Velocidad del desplazamiento
+        speedAsDuration: true, // Usa la velocidad como duración de la animación
+    });
 });
 //# sourceMappingURL=bundle.js.map

@@ -2,7 +2,6 @@
 
 .trabajos {
 	background: #0d0e26;
-
 	width: 90%;
 	max-width: 1000px;
 	margin: auto;
@@ -16,6 +15,7 @@
 
 	&__titulo {
 		margin-bottom: 10px;
+		font-size: 25px;
 	}
 
 	&__trabajo {
@@ -35,4 +35,15 @@
 	&__imagen {
 		width: 100%;
 	}
+}
+
+
+.acercade {
+	background: linear-gradient(90deg, hsl(0, 0%, 8%) 0%, hsl(0, 0%, 14%) 100%);
+	width: 90%;
+	color: white;
+	max-width: 1000px;
+	margin: auto;
+	padding: 40px 65px;
+
 }
