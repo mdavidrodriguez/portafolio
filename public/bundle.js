@@ -61,10 +61,10 @@ const ventanaTrabajos = document.getElementById('ventana-trabajos');
 const datos = [
     {
         id: '1',
-        titulo: 'Trabajo #1',
-        texto: 'Magna eu culpa sunt anim aliqua nulla veniam eiusmod commodo consectetur dolore dolor. Consequat laborum ad enim aute qui mollit quis occaecat laborum veniam qui. Do incididunt Lorem proident in cillum eu labore est exercitation. Nostrud in ex officia commodo commodo Lorem. Et laboris pariatur.',
-        fecha: '12 de agosto 2023',
-        demoUrl: 'https://ejemplo.com/demo1'
+        titulo: 'Sistema Reservas Consultorio Odontodologico',
+        texto: 'He desarrollado un sistema de reservas con Vue.js para un consultorio odontológico. Esta solución integral optimiza la gestión de usuarios, servicios y citas, ofreciendo a los pacientes la conveniencia de reservar citas en línea y acceder a su historial. Para el personal, proporciona un panel de administración eficiente. Destaca por su interfaz moderna y medidas de seguridad sólidas. Además, este sistema ha sido documentado exhaustivamente y sometido a pruebas rigurosas, incluyendo mediciones de calidad del programa.',
+        fecha: '26 de Noviembre 2023',
+        demoUrl: 'https://frontend-consultorio.vercel.app/'
     },
     {
         id: '2',
