@@ -51,10 +51,6 @@ const animarTexto = (elemento) => {
 
     // Retornamos una promesa para saber cuando la animación acabo
     return new Promise((resolve) => setTimeout(resolve, numeroLetras * 100));
-    
-
-
-
 
 };
 
@@ -137,6 +133,57 @@ ventanaTrabajos.querySelector('.ventana__overlay').addEventListener('click', (e)
     if (e.target.matches('.ventana__overlay')) {
         ventanaTrabajos.classList.remove('ventana--active');
     }
+});
+
+const slider = document.getElementById('slider');
+
+let clickPresionado = false;
+let coordenadaInicial;
+let scrollLeft;
+
+const presiona = (e) => {
+    clickPresionado = true;
+    coordenadaInicial = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+    // console.log('pageX: ', e.pageX);
+    // console.log('slider.offsetLeft: ', slider.offsetLeft);
+    // console.log('scrollLeft: ', slider.scrollLeft);
+};
+const mueve = (e) => {
+    if (!clickPresionado) {
+        return;
+    }
+
+    const espaciado = e.pageX - slider.offsetLeft;
+    const distanciaRecorrida = espaciado - coordenadaInicial;
+    slider.scrollLeft = scrollLeft - distanciaRecorrida;
+    // console.log('mueve');
+};
+const suelta = (e) => {
+    clickPresionado = false;
+    // console.log('suelta');
+
+};
+
+slider.addEventListener('mousedown', presiona);
+slider.addEventListener('mousemove', mueve);
+slider.addEventListener('mouseup', suelta);
+
+const botonesEmail = document.querySelectorAll('[data-action="abrir-ventana-correo"]');
+const botonesCerrar = document.querySelectorAll('[data-action="cerrar-ventana"]');
+const ventanaCorreo = document.getElementById('ventana-correo');
+botonesEmail.forEach((boton) => {
+    boton.addEventListener('click', (e)=> {
+        e.preventDefault();
+        ventanaCorreo.classList.add('ventana--active');
+    });
+});
+
+botonesCerrar.forEach((boton) => {
+    boton.addEventListener('click', (e)=> {
+        e.preventDefault();
+        ventanaCorreo.classList.remove('ventana--active');
+    });
 });
 
 window.addEventListener('load', async () => {

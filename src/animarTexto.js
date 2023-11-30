@@ -30,10 +30,6 @@ const animarTexto = (elemento) => {
 
     // Retornamos una promesa para saber cuando la animación acabo
     return new Promise((resolve) => setTimeout(resolve, numeroLetras * 100));
-    
-
-
-
 
 };
 
