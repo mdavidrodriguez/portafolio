@@ -1,9 +1,7 @@
-'use strict';
-
 const animarTexto = (elemento) => {
     const numeroLetras = elemento.dataset.texto.length;
     // Activamos el cursor cuando comienza la animación
-    const cursor = elemento.querySelector('.hero__cursor');
+    const cursor = elemento.querySelector('.hero__cursor')
     cursor.classList.add('hero__cursor--visible');
 
     // Por cada letra, la agregamos al DOM con 100ms de separación
@@ -25,8 +23,8 @@ const animarTexto = (elemento) => {
         // Comprobamos que el cursor no sea el ultimo
         if(indexCursorActual < cursores.length - 1){
             cursor.classList.remove('hero__cursor--visible');
-        }else {
-            cursor.classList.add('hero__cursor--active');
+        }else{
+            cursor.classList.add('hero__cursor--active')
         }
     }, numeroLetras * 100);
 
@@ -39,12 +37,5 @@ const animarTexto = (elemento) => {
 
 };
 
-window.addEventListener('load', async () => {
-    await   animarTexto(document.querySelector('.hero__titulo--uno'));
-    await animarTexto(document.querySelector('.hero__titulo--dos'));
 
-    document.querySelectorAll('.hero__burbuja')[0].classList.add('hero__burbuja--active-1');
-    document.querySelectorAll('.hero__burbuja')[1].classList.add('hero__burbuja--active-2');
-
-});
-//# sourceMappingURL=bundle.js.map
+export default animarTexto;
