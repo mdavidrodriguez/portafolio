@@ -68,38 +68,35 @@ const datos = [
     },
     {
         id: '2',
-        titulo: 'Trabajo #2',
-        texto: 'Magna eu culpa sunt anim aliqua nulla veniam eiusmod commodo consectetur dolore dolor. Consequat laborum ad enim aute qui mollit quis occaecat laborum veniam qui. Do incididunt Lorem proident in cillum eu labore est exercitation. Nostrud in ex officia commodo commodo Lorem. Et laboris pariatur.',
+        titulo: 'Aplicativo web para la gestion de pedidos de un negocio',
+        texto: 'Desarrollé un sistema integral de gestión de pedidos para negocios, destacando las funcionalidades clave: gestión de usuarios, inventario, productos y creación eficiente de pedidos. La aplicación, construida con React.js y Express, garantiza una experiencia de usuario fluida y un rendimiento robusto en el servidor. Simplifica operaciones diarias y potencia la toma de decisiones informadas para impulsar la eficiencia operativa. Un hito exitoso en la mejora de procesos y la experiencia del cliente.',
         fecha: '30 de agosto 2023',
-        demoUrl: 'https://ejemplo.com/demo1'
+        demoUrl: 'https://gestion-mitiendita.vercel.app'
     },
     {
         id: '3',
-        titulo: 'Trabajo #3',
-        texto: 'Magna eu culpa sunt anim aliqua nulla veniam eiusmod commodo consectetur dolore dolor. Consequat laborum ad enim aute qui mollit quis occaecat laborum veniam qui. Do incididunt Lorem proident in cillum eu labore est exercitation. Nostrud in ex officia commodo commodo Lorem. Et laboris pariatur.',
-        fecha: '30 de agosto 2023',
-        demoUrl: 'https://ejemplo.com/demo1'
+        titulo: 'App Movil para la busqueda de pensionados de estudiantes en la ciudad de Valledupar ',
+        texto: 'En colaboración con un equipo, creamos una aplicación en Flutter destinada a estudiantes en Valledupar en busca de información sobre pensionados en la ciudad. Esta herramienta conjunta proporciona una búsqueda eficaz, ofreciendo detalles completos sobre pensionados, sus ubicaciones y servicios. Con una interfaz atractiva y fácil de usar, la aplicación busca mejorar la experiencia estudiantil al simplificar el acceso a información vital para la toma de decisiones educativas. Un proyecto grupal ágil y centrado en el usuario para facilitar la búsqueda de pensionados en Valledupar.',
+        fecha: '12 septiembre 2023',
     },
     {
         id: '4',
-        titulo: 'Trabajo #4',
-        texto: 'Magna eu culpa sunt anim aliqua nulla veniam eiusmod commodo consectetur dolore dolor. Consequat laborum ad enim aute qui mollit quis occaecat laborum veniam qui. Do incididunt Lorem proident in cillum eu labore est exercitation. Nostrud in ex officia commodo commodo Lorem. Et laboris pariatur.',
-        fecha: '30 de agosto 2023',
-        demoUrl: 'https://ejemplo.com/demo1'
+        titulo: 'App Móvil para Gestión de Reservas de Hotel en Pueblo Bello',
+        texto: 'Desarrollé una aplicación móvil en Flutter diseñada para simplificar la gestión de reservas de hotel en el encantador municipio de Pueblo Bello. Esta aplicación permite a los usuarios realizar reservas de manera intuitiva, explorar opciones de alojamiento, y recibir confirmaciones instantáneas. Con una interfaz amigable, la aplicación proporciona información detallada sobre las instalaciones de cada hotel, disponibilidad de habitaciones y precios actualizados. Una solución móvil completa que facilita a los visitantes la planificación de su estancia en Pueblo Bello, mejorando así la experiencia de reserva y alojamiento.',
+        fecha: '20 octubre 2023',
     },
     {
         id: '5',
-        titulo: 'Trabajo #5',
+        titulo: 'App Movil para la gestión administrativa de una veterinaria',
         texto: 'Magna eu culpa sunt anim aliqua nulla veniam eiusmod commodo consectetur dolore dolor. Consequat laborum ad enim aute qui mollit quis occaecat laborum veniam qui. Do incididunt Lorem proident in cillum eu labore est exercitation. Nostrud in ex officia commodo commodo Lorem. Et laboris pariatur.',
-        fecha: '30 de agosto 2023',
-        demoUrl: 'https://ejemplo.com/demo1'
+        fecha: '29 Noviembre 2023',
     },
     {
         id: '6',
-        titulo: 'Trabajo #6',
-        texto: 'Magna eu culpa sunt anim aliqua nulla veniam eiusmod commodo consectetur dolore dolor. Consequat laborum ad enim aute qui mollit quis occaecat laborum veniam qui. Do incididunt Lorem proident in cillum eu labore est exercitation. Nostrud in ex officia commodo commodo Lorem. Et laboris pariatur.',
-        fecha: '30 de agosto 2023',
-        demoUrl: 'https://ejemplo.com/demo1'
+        titulo: 'Consumo de Api de Peliculas con react.js',
+        texto: 'Este proyecto fue realizado con react.js, en el cual se consume una api de peliculas, en el cual se puede ver el detalle de cada pelicula, estas son de acuerdo a los ultimos lanzamientos.',
+        fecha: '04 Marzo 2023',
+        demoUrl: 'https://peliculas-fetch-mdavidrodriguez.vercel.app/'
     },
 ];
 
