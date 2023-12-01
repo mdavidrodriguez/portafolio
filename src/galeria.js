@@ -19,7 +19,7 @@ const datos = [
     },
     {
         id: '3',
-        titulo: 'App Movil para la busqueda de pensionados de estudiantes en la ciudad de Valledupar ',
+        titulo: 'App Movil para la busqueda de pensionados y apartamentos de estudiantes en la ciudad de Valledupar ',
         texto: 'En colaboración con un equipo, creamos una aplicación en Flutter destinada a estudiantes en Valledupar en busca de información sobre pensionados en la ciudad. Esta herramienta conjunta proporciona una búsqueda eficaz, ofreciendo detalles completos sobre pensionados, sus ubicaciones y servicios. Con una interfaz atractiva y fácil de usar, la aplicación busca mejorar la experiencia estudiantil al simplificar el acceso a información vital para la toma de decisiones educativas. Un proyecto grupal ágil y centrado en el usuario para facilitar la búsqueda de pensionados en Valledupar.',
         fecha: '12 septiembre 2023',
     },
@@ -32,7 +32,7 @@ const datos = [
     {
         id: '5',
         titulo: 'App Movil para la gestión administrativa de una veterinaria',
-        texto: 'Magna eu culpa sunt anim aliqua nulla veniam eiusmod commodo consectetur dolore dolor. Consequat laborum ad enim aute qui mollit quis occaecat laborum veniam qui. Do incididunt Lorem proident in cillum eu labore est exercitation. Nostrud in ex officia commodo commodo Lorem. Et laboris pariatur.',
+        texto: 'En colaboración con un equipo, creamos una aplicación móvil en Flutter para simplificar la gestión administrativa de clínicas veterinarias. Facilita la programación de citas, el manejo de historias clínicas digitales, el control de inventario y la facturación. Una solución intuitiva que potencia la eficiencia operativa y mejora la atención a los pacientes en entornos veterinarios.',
         fecha: '29 Noviembre 2023',
     },
     {
